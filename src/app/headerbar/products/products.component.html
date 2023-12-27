@@ -1,0 +1,160 @@
+
+<div class="edit "  [ngStyle]="{'display':display_item}" >
+  <div class="edit-wrapper " >
+    <h3 class="edit-title">Edit</h3>
+    <form >
+      <div class="form-group">
+        <label for="text" class="text-wrapper">Image Url</label>
+        <input type="text" class="form-control"   placeholder="" >
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="text" class="text-wrapper">Title</label>
+        <input type="text" class="form-control"  placeholder="" >
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="text" class="text-wrapper">Brand Name</label>
+        <input type="text" class="form-control"  placeholder="" >
+      </div>
+      <br>
+      <div class="row ">
+        <div class="col-5 inline-wrapper price-wrap">
+          <label class="text-wrapper">Price</label>
+          <input type="number" class="form-control"  placeholder="" >
+        </div>
+        <br>
+        <div class="col-5 inline-wrapper wrap-cat">
+          <label class="text-wrapper">Catagory</label>
+          <input type="text" class="form-control"  placeholder="" >
+        </div>
+      </div>
+      <br>
+      <div class="row">
+      <div class="col-6">
+        <button type="submit" class="btn btn-dark submit close" (click)="cancel()">Cancel</button>
+      </div>
+      <div class="col-6" style="text-align: right;padding-right: 45px;" >
+        <button type="submit" class="btn btn-dark submit close "(click)="onSubmit()" >&nbsp;&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;</button>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
+<div class="add "   [ngStyle]="{'display':add_display_item}">
+  <div class="add-wrapper " >
+    <h3 class="add-title">Add Items</h3>
+    <form >
+      <div class="form-group">
+        <label for="text" class="text-wrapper">Image Url</label>
+        <input type="text" class="form-control"   placeholder="" >
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="text" class="text-wrapper">Add Item</label>
+        <input type="text" class="form-control"  placeholder="" >
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="text" class="text-wrapper">Brand Name</label>
+        <input type="text" class="form-control"  placeholder="" >
+      </div>
+      <br>
+      <div class="row ">
+        <div class="col-5 inline-wrapper price-wrap">
+          <label class="text-wrapper">Price</label>
+          <input type="number" class="form-control"  placeholder="" >
+        </div>
+        <br>
+        <div class="col-5 inline-wrapper wrap-cat">
+          <label class="text-wrapper">Catagory</label>
+          <input type="text" class="form-control"  placeholder="" >
+        </div>
+      </div>
+      <br>
+      <div class="row">
+      <div class="col-6">
+        <button type="submit" class="btn btn-dark submit close" (click)="cancel()">Cancel</button>
+      </div>
+      <div class="col-6" style="text-align: right;padding-right: 45px;" >
+        <button type="submit" class="btn btn-dark submit close "(click)="onSubmit()" >&nbsp;&nbsp;&nbsp;Add&nbsp;&nbsp;&nbsp;</button>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
+<div class="row top-wrapper pt-3 " [ngStyle]="{'background-color':background,'height':height,'width':width}" >
+  <div class="col-12">
+    <div class="row">
+      <div class=" col-5 col-md-6 col-sm-4 col-xs-4">
+        <h4>Products <small  class="users-wrap"> 48 items</small></h4>
+      </div>
+      <div class="col-4 col-md-4 col-sm-4 col-xs-4">
+        <button class="btn btn-outline-dark ">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="25px" height="25px">
+            <path d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z"/>
+          </svg>
+          Download SVG</button>
+      </div>
+      <div class="col-3 col-lg-2 col-sm-4 col-xs-4">
+        <button class="btn btn-dark" (click)="addItem()">  +  Add Items</button>
+      </div>
+    </div>
+    <div class="row pt-4">
+      <div class="col-4">
+        <small style="padding-left: 10px;" class="heading-wrap">Name</small>
+      </div>
+      <div class="col-2">
+        <small class="heading-wrap">
+          Price
+        </small>
+      </div>
+      <div class="col-2" >
+        <small class="heading-wrap">Catagory</small>
+      </div>
+      <div class="col-4">
+        <small class="heading-wrap">Brand</small>
+      </div>
+    </div>
+    <div class="row products " *ngFor="let product of Products;let i=index">
+      <div class="col-4 col-md-4 col-sm-3">
+        <div class="row">
+          <div class="col-12 col-md-2 col-sm-10">
+            <img class="img-wrap" src="{{product.image}}" alt="" >
+          </div>
+          <div class="col-6 col-md-10 col-sm-2">
+            <!-- <small class="Name-title">{{product.title}}</small> -->
+            <small *ngIf="product.title.length <= 10" class="Name-title ">{{product.title}}</small>
+          <small  *ngIf="product.title.length > 10"   class="Name-title ">{{product.title | slice:0:10}}
+            <small *ngIf="product.title.length >10" ngbTooltip="{{product.title}}">...</small>
+          </small>
+          </div>
+        </div>
+      </div>
+      <div class="col-2 col-md-2 col-sm-2">
+        <small class="mail-wraper  line-wrapper">${{product.price}}</small>
+      </div>
+      <div class="col-2 col-md-2 col-sm-2">
+        <small class="line-wrapper">{{product.category}}</small>
+      </div>
+      <div class="col-4 col-md-4 col-sm-4">
+        <div class="row">
+          <div class="col-8 col-md-8 col-sm-6">
+            <small class="brand-name">Axues Mart</small>
+          </div>
+          <div class="col-2 col-md-2 col-sm-3">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20px" height="20px" (click)="removeItem(i)">
+              <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/>
+            </svg>
+          </div>
+          <div class="col-2 col-md-2 col-sm-3">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20px" height="20px"  (click)="editItem(i)" >
+              <path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

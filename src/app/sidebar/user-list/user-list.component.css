@@ -1,0 +1,107 @@
+.title{
+  font-size: 16px;
+  font-family: 'Rubik',sans-serif;
+  margin-right: 10px;
+  padding: 10px;
+}
+.card-back{
+  border: none;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(224,224,224,1);
+-moz-box-shadow: 0px 0px 10px 5px rgba(224,224,224,1);
+box-shadow: 0px 0px 10px 5px rgba(224,224,224,1);
+}
+.head-title{
+font-family: "rubik",sans-serif;
+}
+.btn-primary{
+border-radius: 30px;
+}
+.line-wrap{
+  border-bottom: 1px solid grey;
+}
+.active{
+  border-bottom: 2px solid black;
+}
+input{
+  font-family: inherit;
+				font-size: 16px;
+        border-radius: 0;
+				font-weight: 400;
+				line-height: inherit;
+				height: 60px;
+				padding: 0.75rem 1.25rem;
+				border: none;
+        color: black;
+        background-color: #dddddd42;
+}
+
+@media screen and (min-width: 992px) {
+  .add{
+    margin: auto;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    border-radius: 11px;
+background: rgba(221, 221, 221, 0.26);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.6px);
+-webkit-backdrop-filter: blur(1.6px);
+border: 1px solid rgba(221, 221, 221, 0.02);
+  }
+  .add-wrapper{
+    width: 33.33%;
+    position: absolute;
+    background-color: white;
+    margin-left: 33.33%;
+    margin-top: 3.5%;
+    /* margin: auto; */
+  }
+
+  .inline-wrapper{
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .add-wrapper{
+    width: 90%;
+    position: absolute;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 0%;
+
+  }
+
+  .add{
+    margin: auto;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+background: rgba(221, 221, 221, 0.26);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.6px);
+-webkit-backdrop-filter: blur(1.6px);
+border: 1px solid rgba(221, 221, 221, 0.02);
+
+  }
+  .price-wrap{
+    margin-left: 30px;
+  }
+  .wrap-cat{
+    margin-left: 12px;
+  }
+}

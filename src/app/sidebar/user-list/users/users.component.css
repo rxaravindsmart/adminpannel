@@ -1,0 +1,84 @@
+.active_card{
+  background-color: #f2f2f2;
+}
+.card{
+  border: none;
+}
+.progress-wrap{
+  background-color: #f5dcfc;
+  /* width: 80%; */
+}
+.progress{
+  height: 8px;
+}
+.progress-wrap-progress{
+background-color: antiquewhite;
+}
+.progress-wrap-complete{
+  background-color: #e2fade;
+}
+.add-card{
+  margin: auto;
+}
+.icons-wrap{
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'rubik',sans-serif;
+}
+svg{
+  margin-bottom: 2px;
+}
+.top-svg{
+  background-color: #f2f2f2;
+  padding-top: 3px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  border-radius: 50%;
+}
+.date-wrap{
+  background-color: #f2f2f2;
+  width: 60%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 15px;
+}
+.dot-bod-card{
+  border: 1px solid black;
+  border-style: dashed;
+}
+.img{
+  object-fit: cover;
+}
+.title{
+  font-family: 'rubik',sans-serif;
+}
+.title-count{
+  position: absolute;
+  font-size: 22px;
+}
+.count{
+  position: relative;
+}
+.gfg {
+  margin: 3%;
+  position: relative;
+}
+
+.first-txt {
+  position: absolute;
+  top: 2px;
+  color: white;
+  font-size: 20px;
+  left: -11px;
+}
+
+.blur-wrap{
+  filter: blur(1px);
+}
+.list-group-item{
+  border: none;
+  padding: 0;
+}

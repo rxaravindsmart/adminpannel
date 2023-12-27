@@ -1,0 +1,51 @@
+<div class="inter">
+    <ul class="list-group list-group-horizontal-sm">
+      <li class="list-group-item">
+        <img src="../assets/inter/inter.jpg" class="image-wrapper" alt="" >
+      </li>
+      <li class="list-group-item pt-4">
+        <h4 class="title">We've just released new update</h4>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, delectus?</p>
+        <button type="button" class="btn btn-light">Dismiss</button>&nbsp;&nbsp;
+        <a class="btn text-white" style="background-color: #7620b3;"  role="button">
+          Changing
+        </a>
+      </li>
+    </ul>
+    <div class="controls pt-3">
+      <div class="row">
+        <div class="col-8">
+          <h4 class="control-title">
+            Connected Apps
+          </h4>
+          <p class="control-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, explicabo?</p>
+        </div>
+        <div class="col-4">
+          <form class="example" action="/action_page.php">
+            <button type="submit" class="btn btn-light"><i class="fa fa-search"></i></button>
+            <input type="text" placeholder="Search.." name="search">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row" *ngFor="let app of Application">
+      <div class="col-8" >
+        <ul class="list-group list-group-horizontal">
+          <li class="list-group-item">
+        <img src="{{app.src}}" alt="" class="listing-images" >
+          </li>
+          <li class="list-group-item ">
+            <small class="app-title">{{app.title}}</small>
+            <p class="app-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-4 switch-on">
+        <small class="app-text">Learn more</small> &nbsp;&nbsp;
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+  </div>

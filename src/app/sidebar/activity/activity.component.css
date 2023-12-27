@@ -1,0 +1,220 @@
+.row{
+  margin: 0;
+}
+.card-back{
+  background-color: #f5f5f5;
+  /* border-radius: 15px; */
+  height: 10rem;
+  margin-left: 3px;
+}
+.card{
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(232,232,232,1);
+-moz-box-shadow: 0px 0px 5px 2px rgba(232,232,232,1);
+box-shadow: 0px 0px 5px 2px rgba(232,232,232,1);
+}
+.card-header{
+  background-color: #f5f5f5;
+}
+small{
+  font-family: 'rubik',sans-serif;
+}
+.card-footer{
+  background-color: #f5f5f5;
+}
+.box-one{
+  padding-right: 50%;
+  border: 1px solid #73dffa;
+  background-color: #def8ff;
+}
+.box-two{
+  padding-right: 20%;
+  border: 1px solid #73dffa;
+  background-color: #def8ff;
+}
+.text{
+  font-family: 'rubik',sans-serif;
+}
+.text-muted{
+  font-family: 'rubik',sans-serif;
+}
+.title{
+  font-family: 'rubik',sans-serif;
+}
+.head-text{
+  font-family: 'rubik',sans-serif;
+}
+.btn{
+  font-family: 'rubik',sans-serif;
+}
+.text-title{
+  font-family: 'rubik',sans-serif;
+}
+
+.name-text{
+  font-family: 'rubik',sans-serif;
+}
+.text-sm-fix{
+  font-size: 14px;
+  line-height: 2rem;
+}
+.raw-back-card{
+  margin-left: -30px;
+}
+img{
+  object-fit: cover;
+}
+.box-three{
+  padding-right: 80%;
+  border: 1px solid #73dffa;
+  background-color: #def8ff;
+}
+.box-four{
+  padding-right: 30%;
+  border: 1px solid #73dffa;
+  background-color: #def8ff;
+}
+.horizontal-lr{
+  transform: rotate(270deg);
+}
+.box-second-one{
+  padding-right: 60%;
+  border: 1px solid #b3b3b3;
+  background-color: #ededed;
+}
+.box-second-two{
+  padding-right: 80%;
+  border: 1px solid #b3b3b3;
+  background-color: #ededed;
+}
+
+.box-second-three{
+  padding-right: 40%;
+  border: 1px solid #b3b3b3;
+  background-color: #ededed;
+}
+.box-third-one{
+  padding-right: 70%;
+  border: 1px solid #f98aff;
+  background-color: #feedff;
+}
+.box-third-two{
+  padding-right: 40%;
+  border: 1px solid #f98aff;
+  background-color: #feedff;
+}
+
+.box-third-three{
+  padding-right: 80%;
+  border: 1px solid #f98aff;
+  background-color: #feedff;
+}
+.month-one{
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 70%;
+  border: 1px solid black;
+}
+.month-two{
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 30%;
+  border: 1px solid black;
+}
+.list-group-item{
+border: none;
+font-family: 'rubik',sans-serif;
+font-size: 14px;
+padding-top: 11px;
+}
+.graph {
+	margin-bottom:1em;
+  font:normal 100%/150% arial,helvetica,sans-serif;
+}
+
+.graph tbody th {
+	text-align:right;
+}
+.graph {
+	 display:block;
+   height:200px;
+   padding-left: -60px;
+   margin-left: -40px;
+}
+.graph thead {
+	display:none;
+}
+.graph tr {
+	position:relative;
+	display:block;
+}
+.graph td {
+	display:block;
+	text-align:center;
+}
+.graph td {
+	width:40%;
+	height:100%;
+  background: linear-gradient(to bottom, #f8edff 0%,#f8edff 32%,#e0a1ff 33%,#e0a1ff 66%,#8402c4 67%,#8402c4 67%,#8402c4 100%);
+}
+.wrapper-height-top{
+  margin-top: -10px;
+}
+.content-bottom-box{
+  margin-right: 20px;
+  font-family: 'rubik',sans-serif;
+  font-size: 14px;
+  margin-left: 7px;
+  margin-top: -10px;
+  margin-bottom: auto;
+}
+@media screen and (min-width:768px) {
+  .graph tbody {
+    position:relative;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(2em, 1fr));
+    column-gap:1.3%;
+    align-items:end;
+    height:100%;
+    margin:3em 0 1em 2.8em;
+    padding:0 1em;
+    border-bottom:1px solid rgba(0,0,0,0.5);
+    background:repeating-linear-gradient(
+      /* 180deg, */
+      rgba(170,170,170,0.7) 0,
+      rgba(170,170,170,0.7) 1px,
+      transparent 1px,
+      transparent 20%
+    );
+  }
+}
+@media screen and (max-width:768px) {
+  .graph tbody {
+    position:relative;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(2em, 1fr));
+    column-gap:-10px;
+    align-items:end;
+    height:100%;
+    margin:3em 0 1em 2.8em;
+    padding:0 1em;
+    border-bottom:1px solid rgba(0,0,0,0.5);
+    background:repeating-linear-gradient(
+      /* 180deg, */
+      rgba(170,170,170,0.7) 0,
+      rgba(170,170,170,0.7) 1px,
+      transparent 1px,
+      transparent 20%
+    );
+  }
+  .contain-head{
+    /* padding-right: -200%; */
+    margin-right: -100%;
+  }
+  .contain-wrap{
+    overflow: auto;
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+.list-group-item{
+  border: none;
+}
+.title{
+  font-family: 'Rubik',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.list-group-item{
+  font-size: 16px;
+  background-color: white;
+  /* position: absolute; */
+  border: none;
+}
+
+.list-group{
+  font-family: 'Rubik',sans-serif;
+  /* background-color: blue; */
+}
+
+.rounded-border{
+  text-align: right;
+  border: 1px solid grey;
+  border-radius: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 1px;
+  padding-bottom: 2px;
+}
+.rounded-border-two{
+  border: 1px solid grey;
+  border-radius: 15px;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.rounded-border-three{
+  border: 1px solid grey;
+  border-radius: 50%;
+  padding-left: 5px;
+  padding-right: 6px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+svg{
+  margin-bottom: 3px;
+  font-weight: 900;
+}
+
+.navbar-expand-lg{
+  padding-top: 20px;
+
+}
+.alert-wrapper{
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 20%;
+}
+.nav-items{
+  font-size: 15px;
+  color: black;
+}
+.user-icon{
+margin-left:auto ;
+}
+
+.brand-navbar{
+  font-size: 15px;
+  /* background-color: white; */
+  border-radius: 10%;
+  font-family:'Rubik',sans-serif;
+  font-weight: 600;
+  padding: 10px;
+}
+.active {
+  font-weight: 500;
+  color: black;
+}
+.active svg{
+  fill: black;
+}
+@media screen and (min-width: 992px) {
+
+  body {
+    margin: 0;
+    font-family: 'Rubik',sans-serif;
+  }
+  img{
+    border-radius: 25%;
+  }
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    border-right: 1px  solid #e0e0e0;
+  }
+  div.content {
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #f6f7ff 100%);
+    margin-left: 250px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    padding: 1px 16px;
+  }
+  .row{
+    margin: 0;
+  }
+  .list-wrapper{
+    font-family: 'Rubik',sans-serif;
+    /* font-weight: 400; */
+    font-size: 16px;
+    /* color: grey; */
+  }
+  .Order-wrapper{
+  margin-left: -12px;
+  margin-right: -16px;
+}
+.title-user{
+  font-family: 'Rubik',sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+.bottom-wrapper{
+  padding-top: 90px;
+}
+.wrapper-heading{
+  font-size: 17px;
+  font-family: 'Rubik',sans-serif;
+  font-weight:600;
+  margin-left: -12px;
+}
+.bottom-wrapper{
+  font-family: 'Rubik',sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+}
+
+@media screen and (max-width: 992px) {
+
+  .sidebar {
+    /* margin: 0; */
+    display: none;
+  }
+  div.content {
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #f6f7ff 100%);
+    margin: 0;
+    padding: 1px 16px;
+  }
+}

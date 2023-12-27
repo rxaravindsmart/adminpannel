@@ -1,0 +1,89 @@
+.title{
+  font-family: 'rubik',sans-serif;
+  font-size: 28px;
+}
+.text{
+  font-family: 'rubik',sans-serif;
+}
+small{
+  font-family: 'rubik',sans-serif;
+}
+.div-container{
+  background-color: #e0e0e0;
+  width: fit-content;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 30px;
+}
+.links{
+font-size: 16px ;
+font-family: 'rubik',sans-serif;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius: 30px;
+}
+.active{
+  background-color: white;
+
+}
+
+@media screen and (min-width:768px) {
+  .invite-wrapper{
+    margin-left: -5px;
+    padding-top: 1%;
+    padding-bottom: 8%;
+    background-image: linear-gradient(to left, #f4f2f5, #f4f3f5, #f4f4f6, #f5f4f6, #f5f5f6, #edecfa, #e8e3fd, #e4d9ff, #dcc1ff, #d8a8ff, #d88bff, #db6af7);
+  }
+
+  .card{
+    background-image: linear-gradient(to left, #ffffff, #f8f4ff, #f4e7ff, #f3daff, #f5ccff);
+    width: fit-content;
+    border-radius: 15px;
+    border: none;
+    margin-top: 10%;
+    margin-left: 16%;
+    padding: 5%;
+    width: 800px;
+    opacity: 1;
+    -webkit-box-shadow: 5px 0px 5px 0px rgba(235,235,235,1);
+-moz-box-shadow: 5px 0px 5px 0px rgba(235,235,235,1);
+box-shadow: 5px 0px 5px 0px rgba(235,235,235,1);
+  }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .invite-wrapper{
+    padding-top: 1%;
+    padding-bottom: 23%;
+    background-image: linear-gradient(to left, #f4f2f5, #f4f3f5, #f4f4f6, #f5f4f6, #f5f5f6, #edecfa, #e8e3fd, #e4d9ff, #dcc1ff, #d8a8ff, #d88bff, #db6af7);
+  }
+  .card{
+    border-radius: 15px;
+    background-image: linear-gradient(to right bottom, #f6cfff, #e9dcff, #e2e6ff, #e3efff, #edf5fc);
+    width: fit-content;
+    border: none;
+    margin-top: 20%;
+    margin-left: 15%;
+    padding: 2%;
+  }
+}
+@media  screen and (max-width:576px) {
+  .invite-wrapper{
+    padding-top: 1%;
+    padding-bottom: 32%;
+    background-image: linear-gradient(to left, #f4f2f5, #f4f3f5, #f4f4f6, #f5f4f6, #f5f5f6, #edecfa, #e8e3fd, #e4d9ff, #dcc1ff, #d8a8ff, #d88bff, #db6af7);
+  }
+  .card{
+    border-radius: 15px;
+    background-image: linear-gradient(to right bottom, #f6cfff, #e9dcff, #e2e6ff, #e3efff, #edf5fc);
+    width: fit-content;
+    border: none;
+    margin-top: 30%;
+    margin-left: 5%;
+    padding: 2%;
+  }
+}

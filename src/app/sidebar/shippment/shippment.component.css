@@ -1,0 +1,93 @@
+.row{
+  margin: 0;
+}
+.title-head{
+  font-family: 'rubik',sans-serif;
+}
+.card{
+  border: none;
+  background-color: #f5f2fc;
+  border-radius: 0;
+}
+.card-header{
+  border: none;
+  border-radius: 0;
+  background-color: #fdfcff;
+}
+.list-group-item{
+  background-color: #fdfcff;
+  border: none;
+}
+.title{
+  font-size: 16px;
+  line-height: 3.2rem;
+  font-family: 'rubik',sans-serif;
+}
+.item{
+  line-height: 2rem;
+  font-weight: 500;
+}
+.id-wrap{
+  font-weight: 500;
+}
+.text{
+  font-family: 'rubik',sans-serif;
+}
+.icon {
+  height: 10px;
+  width: 10px;
+  margin-left: 20px;
+  border-radius: 50%;
+  display:inline-block;
+  transition: all 1000ms ease;
+}
+.icon-sm{
+margin-left: 21px;
+height: 10px;
+width: 10px;
+border-radius: 50%;
+display:inline-block;
+transition: all 1000ms ease;
+}
+.line-marker {
+  height: 60px;
+  width: 3px;
+  margin-left: 95px;
+  margin-bottom: 5px;
+  transition: all 800ms ease;
+  background-color: green
+}
+.line-marker-sm{
+  height: 30px;
+  width: 3px;
+  margin-left: 95px;
+  margin-bottom: 5px;
+  transition: all 800ms ease;
+  background-color: green
+}
+.ship-head{
+  font-size: 18px;
+  font-family: 'rubik',sans-serif;
+}
+p{
+  font-family: 'rubik',sans-serif;
+}
+.empty-space{
+  padding-left: 43px;
+}
+li p {
+  display:inline-block;
+  margin-left: 25px;
+}
+li {
+  list-style: none;
+  line-height: 1px;
+}
+.text-r{
+  text-align: end;
+}
+@media screen and(max-width:576px) {
+  .text-r{
+    text-align: end;
+  }
+}

@@ -1,0 +1,21 @@
+.list-group-item{
+  border: none;
+  font-family: 'Rubik',sans-serif;
+}
+.active{
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  border-bottom:2px  solid black;
+}
+.list-group{
+  /* padding-left: -20px; */
+  margin-left: -16px;
+}
+.title{
+
+  font-family: 'Rubik',sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+

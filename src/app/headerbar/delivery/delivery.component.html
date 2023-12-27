@@ -1,0 +1,82 @@
+<div class="item-wrapper">
+  <div class="row pt-4" >
+    <div class="col-sm-6 col-lg-3 col-md-4" *ngFor="let item of items;let i=index">
+      <div class="card" >
+        <!-- <h3 class="title pt-4">{{item.Name}}</h3> -->
+        <small class="title pt-3" *ngIf="item.title.length <= 10" >{{item.title}}</small>
+          <small class="title pt-3" *ngIf="item.title.length > 10"   >{{item.title | slice:0:10}}
+            <small class="title pt-3" *ngIf="item.title.length >10" ngbTooltip="{{item.title}}">...</small>
+          </small>
+        <p class="text-muted">{{item.status}}</p>
+        <small class="image-wrapper">
+        <img class="img-cap rounded-circle" src="{{item.image}}" alt="" >
+      </small>
+        <h5 class="head-text pt-4 pb-4">${{item.price}}</h5>
+        <h5 class="text-bottom  " (click)="onclick(i)">Show</h5>
+    </div>
+    <br>
+  </div>
+  <h4 class="title-active pb-3 pt-3" *ngIf="flag===true"> Delivery Details</h4>
+<div class="row" *ngIf="flag===true">
+  <hr>
+  <div class="col-sm-4 items">
+<img src="{{items[id].image}}" class="img-wrap " alt="" >
+<br>
+  </div>
+  <div class="col-sm-8 ">
+<div class="row">
+  <div class="col-6">
+    <p class="text">Name :</p>
+  </div>
+  <div class="col-6">
+    <p class="text-item">{{userDetails[id].name.firstname}} {{userDetails[id].name.lastname}}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+<p class="text">Address :</p>
+  </div>
+  <div class="col-6">
+<p class="text-item">{{values.city}}</p>
+<p class="text-item">{{values.state}}</p>
+<p class="text-item">{{values.state_abbr}}</p>
+<p class="text-item">{{values.zipcode}}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+<p class="text">Item Name :</p>
+  </div>
+  <div class="col-6">
+<p class="text-item">{{items[id].title}}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+<p class="text">Date :</p>
+  </div>
+  <div class="col-6">
+    <p class="text-item">13 Dec 2022</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+<p class="text">Total Amount :</p>
+  </div>
+  <div class="col-6">
+<p class="text-item">{{items[id].price}}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+<p class="text">Status :</p>
+  </div>
+  <div class="col-6">
+<p class="text-item">Delivered</p>
+  </div>
+</div>
+  </div>
+  <hr>
+</div>
+</div>
+

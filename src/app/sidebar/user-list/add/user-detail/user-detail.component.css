@@ -1,0 +1,55 @@
+
+.list-group-item{
+  border: none;
+}
+.up-top{
+  line-height: 3.2rem;
+}
+.text-btn{
+  /* padding: 10px; */
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  color: black;
+  font-weight: 500;
+}
+.r-wrap-top{
+  text-align: end;
+}
+.text{
+font-family: 'rubik',sans-serif;
+/* color: grey; */
+font-weight: 300;
+}
+.text-id{
+  font-family: 'rubik',sans-serif;
+  font-weight: 400;
+}
+.icons{
+  font-weight: 400;
+  font-family: 'rubik',sans-serif;
+  font-size: 16px;
+}
+.title{
+  font-family: 'rubik',sans-serif;
+}
+.r-b-top-header{
+  border-right: 1px solid grey;
+}
+.empty{
+  padding: 15px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  line-height: 3.2rem;
+}
+.text-green{
+  color: green;
+  font-family: 'rubik',sans-serif;
+}
+.btn-outline-dark{
+  font-family: 'rubik',sans-serif;
+  margin-left: 10px; margin-right: 10px;
+}

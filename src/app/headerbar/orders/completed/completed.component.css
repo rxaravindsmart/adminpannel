@@ -1,0 +1,59 @@
+.head-wrapper{
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 4px;
+}
+.head{
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Rubik',sans-serif;
+}
+.id-head{
+  font-weight: 400;
+}
+.name-head{
+  font-weight: 400;
+}
+.status-head{
+  font-weight: 300;
+  color:#4875db ;
+}
+.item-head{
+  text-transform: capitalize;
+  font-size: 15px;
+  font-family: 'Rubik',sans-serif;
+}
+.item-wrapper{
+  border: 2px solid grey;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 4px;
+}
+.circle{
+  padding-left: 7px;
+  padding-right: 7px;
+  background-color: #4875db;
+  border-radius: 50%;
+  border: 4px solid #dae1f0;
+}
+.item-wrapper:hover{
+  background-color: #afc2ed;
+  border: 2px solid #afc2ed;
+  box-shadow: 20px 20px 20px 20px #e3eafa;
+}
+.action-set{
+  background-color: #f7f7f7;
+  padding: 5px;
+  margin-right: 5px;
+}
+.action-wrap{
+  background-color: #f7f7f7;
+  padding: 5px;
+}
+@media screen and (max-width:576px) {
+.order-wrapper{
+  margin-right: -100%;
+}
+}

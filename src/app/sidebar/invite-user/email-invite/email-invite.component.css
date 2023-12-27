@@ -1,0 +1,32 @@
+.r-pad-top{
+  margin-right: -110px;
+}
+button{
+  padding: 10px;
+  margin-top: 2px;
+}
+input{
+  border: none;
+  padding: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: 'rubik',sans-serif;
+}
+.var-log-wrap{
+margin-top: -55px;
+text-align: right;
+}
+label{
+  font-weight: 500;
+  font-family: 'rubik',sans-serif;
+}
+.purple{
+  background-color: #ce28f7;
+  width: 100px;
+  font-family: 'rubik',sans-serif;
+  color: white;
+}
+.text{
+  font-family: 'rubik',sans-serif;
+  font-size: 15px;
+}

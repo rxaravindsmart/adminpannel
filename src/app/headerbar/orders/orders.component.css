@@ -1,0 +1,25 @@
+.nav-title{
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+  margin-right: 20px;
+  padding: 10px;
+}
+.title{
+  font-size: 28px;
+  font-family: 'Rubik', sans-serif;
+}
+.text{
+  font-family: 'Rubik', sans-serif;
+}
+.active{
+  font-weight: 600;
+  background-color: #f7ebfc;
+  border: 2px solid #f7ebfc;
+  /* color: ; */
+}
+.nav-items{
+  background-color: #f7f7f7;
+  padding: 10px;
+  padding-bottom: 13px;
+
+}

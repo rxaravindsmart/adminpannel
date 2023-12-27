@@ -1,0 +1,55 @@
+.title{
+  font-size: 18px;
+  font-family: 'Rubik',sans-serif;
+  font-size: 22px;
+}
+.text{
+  font-size: 14px;
+  font-family: 'Rubik',sans-serif;
+}
+.role{
+  font-size: 15px;
+  font-family: 'Rubik',sans-serif;
+}
+
+@media screen and (min-Width:992px) and ( max-width:1280px )  {
+
+  .image-wrapper{
+    width: 90px;
+    height: 90px;
+    border: 5px solid white;
+  }
+  .card{
+    margin-right: 10px;
+    border: none;
+    height: 14rem;
+  }
+}
+@media screen and (min-width:1280px) {
+  .image-wrapper{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 5px solid white;
+  }
+  .card{
+    margin-right: 10px;
+    border: none;
+    height: 9rem;
+  }
+  .img-wrap{
+    margin: auto;
+  }
+}
+@media screen and (max-width:992px) {
+  .image-wrapper{
+    width: 120px;
+    height: 120px;
+    border: 5px solid white;
+  }
+  .card{
+    margin-right: 10px;
+    border: none;
+    height: 11rem;
+  }
+}

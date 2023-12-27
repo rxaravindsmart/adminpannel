@@ -1,0 +1,177 @@
+
+<div class="edit "[ngStyle]="{'display':display_item}">
+  <div class="edit-wrapper " >
+    <div class="card">
+      <div class="card-body">
+        <div class="edit-title-item pt-2 pb-4">
+          <h3 class="edit-title">Edit</h3>
+        </div>
+      <form >
+      <div class="form-group">
+        <input type="text" class="form-control"   placeholder="Name" >
+      </div>
+      <br>
+      <div class="form-group">
+        <input type="text" class="form-control"  placeholder="Login Name" >
+      </div>
+      <br>
+      <div class="ng-wrap" *ngFor="let items of rows">
+      <div class="row">
+        <div class="col-6 pb-4">
+          <div class="form-group">
+            <input type="text" class="form-control"  placeholder="Project" >
+          </div>
+        </div>
+        <div class="col-6 pb-4">
+          <div class="form-group">
+            <input type="text" class="form-control"  placeholder="Role" >
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 pb-4">
+          <div class="form-group">
+            <input type="text" class="form-control"  placeholder="Status" >
+          </div>
+        </div>
+        <div class="col-6 pb-4">
+          <div class="form-group">
+            <input type="text" class="form-control"  placeholder="Final Date" >
+          </div>
+        </div>
+      </div>
+    </div>
+      <br>
+      <div class="row pt-4" style="text-align: center;">
+      <div class="col-4 " >
+        <button type="submit" class="btn btn-dark submit close" (click)="addrow()">Add Row</button>
+      </div>
+      <div class="col-4"  >
+        <button type="submit" class="btn btn-dark submit close "(click)="onSubmit()" >Edit</button>
+      </div>
+      <div class="col-4">
+        <button type="submit" class="btn btn-dark submit close" (click)="cancel()">Cancel</button>
+      </div>
+    </div>
+    </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="user-wrapper" *ngIf="detail === true">
+  <h2 class="title-wrap pt-3">User list</h2>
+  <div class="row pt-2">
+    <div class="col-6">
+      <small class="text-muted"><small class="text-head">431 </small>Users;<small class="text-head"> 22 </small>Projects; <small class="text-head"> 22 </small>Roles;</small>
+    </div>
+    <div class="col-2 r-end-wrap" >
+      <small class="text-muted">Project <small class="text-head">all <svg xmlns="http://www.w3.org/2000/svg" style="color:#02a61d ;" stroke-width="6" width="12" height="12" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+      </svg></small></small>
+    </div>
+    <div class="col-2 r-end-wrap" >
+      <small class="text-muted">Date Added <small class="text-head">all <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+      </svg></small></small>
+    </div>
+    <div class="col-2 r-end-wrap" >
+      <small class="text-muted">Roll <small class="text-head">all <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+      </svg></small></small>
+    </div>
+  </div>
+  <hr>
+  <div class="row p-3">
+    <div class="col-5">
+      <div class="row">
+      <div class="col-6 " style="text-align: center;">
+        <small class="text-muted cap-top">Name</small>
+      </div>
+      <div class="col-6 ">
+        <small class="text-muted cap-top">Login</small>
+      </div>
+    </div>
+    </div>
+    <div class="col-7">
+      <div class="row">
+      <div class="col-3 ">
+        <small class="text-muted cap-top">Project</small>
+      </div>
+      <div class="col-3 ">
+        <small class="text-muted cap-top">Role</small>
+      </div>
+      <div class="col-3 ">
+        <small class="text-muted cap-top">Status</small>
+      </div>
+      <div class="col-3 ">
+        <small class="text-muted cap-top">Date</small>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="card card-back mt-4" *ngFor="let user of Userlist;let i=index" >
+    <div class="card-body" (click)="onDetail()">
+      <div class="row">
+        <div class="col-5">
+          <div class="row">
+          <div class="col-6 " >
+            <div class="row">
+              <div class="col-4 img-wrap">
+                <small class="img-wrap">
+                  <img src="{{user.src}}" class="rounded-circle" alt="" width="50px" height="50px">
+                </small>
+              </div>
+              <div class="col-8">
+                <small class="text-muted mx-2 ">Name</small>
+                <p class=" mx-2 pt-1 f-title-dark">{{user.name}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 ">
+            <small class="text-muted">Login</small>
+            <p class=" pt-1 f-title-dark">{{user.lname}}</p>
+          </div>
+        </div>
+        </div>
+        <div class="col-7">
+          <div class="row">
+          <div class="col-3 ">
+            <small class="text-muted">Project</small>
+            <p class=" pt-1 f-title-dark">Aero Trek</p>
+            <p class=" l-top-text f-title-dark" *ngIf="user.flag==='true'">{{user.pro1}}</p>
+            <p class="text-muted l-top-text title "*ngIf="user.flag==='true'">{{user.pro2}}</p>
+          </div>
+          <div class="col-3 ">
+            <small class="text-muted">Role</small>
+            <p class=" pt-1 f-title-dark">{{user.role1}}</p>
+            <p class=" l-top-text f-title-dark" *ngIf="user.flag==='true'">{{user.role2}}</p>
+            <p class=" l-top-text f-title-dark" *ngIf="user.flag2==='true'">{{user.role3}}</p>
+          </div>
+          <div class="col-3 ">
+            <small class="text-muted">Status</small>
+            <p class=" pt-1 f-title-dark">{{user.status1}}</p>
+            <p class=" l-top-text f-title-dark back-status" *ngIf="user.flag==='true'">{{user.status2}}</p>
+            <p class=" l-top-text f-title-dark " *ngIf="user.flag2==='true'">{{user.status3}}</p>
+          </div>
+          <div class="col-3 ">
+            <small class="text-muted">Date</small>
+            <p class=" pt-1 f-title-dark back-date">{{user.date}}</p>
+            <p class=" l-top-text f-title-dark back-date" *ngIf="user.flag==='true'" >{{user.datejoin}}</p>
+            <p class=" l-top-text f-title-dark back-date" *ngIf="user.flag2==='true'">{{user.datej}}</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="card-footer" style="text-align: end;">
+      <p>
+        <small class="title act-item-log" (click)="action(i)">Action</small>
+      </p>
+      <p class="pt-2">
+        <small class="title edit-item-log" *ngIf="user.action === true"  (click)="editItem()">Edit</small >
+          <small class="title del-item-log" *ngIf="user.action === true" (click)="deleteItem(i)" >Delete</small>
+      </p>
+    </div>
+  </div>
+  <br>
+</div>
